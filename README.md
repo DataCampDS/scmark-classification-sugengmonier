@@ -48,14 +48,35 @@ Test accuracy: 0.66
 
 While this represents an improvement over the baseline, the Random Forest still struggled with the high dimensionality of gene expression features.
 
-# Exploration of Alternative Models
+Exploration of Alternative Models
 
-To address the limitations of the Random Forest, each team member implemented an alternative classifier:
+To address the limitations of the Random Forest, each team member implemented an alternative classifier and evaluated its performance using balanced accuracy.
 
-Hangwei: XGBoost classifier
+Hangwei: Logistic Regression and XGBoost
 
-Ketong: Logistic Regression classifier
+Logistic Regression:
 
-Louis: Random Forest classifier
+Train balanced accuracy: 0.868
 
-All three alternative models achieved better test accuracy compared to the optimized Random Forest, suggesting that they may be more suitable for high-dimensional single-cell classification.
+Test balanced accuracy: 0.730
+
+XGBoost:
+
+Train balanced accuracy: 1.000
+
+Test balanced accuracy: 0.791
+
+Ketong: LightGBM combined with high-variance gene selection
+
+Train accuracy: 0.960
+
+Test accuracy: 0.740
+
+Louis: TruncatedSVD for dimensionality reduction followed by a Bagging classifier
+
+Train accuracy: 0.985
+
+Test accuracy: 0.741
+
+Overall, all three alternative approaches outperformed the optimized Random Forest on the test set.
+This suggests that models using gradient boosting, dimensionality reduction, or simpler linear structures may generalize better to high-dimensional single-cell RNAseq data
