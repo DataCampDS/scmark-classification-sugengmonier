@@ -53,11 +53,13 @@ While this represents an improvement over the baseline, the Random Forest still 
 To address the limitations of the Random Forest, each team member implemented an alternative classifier and evaluated its performance using balanced accuracy.
 
 **Hangwei: Logistic Regression and XGBoost**
+
 **Logistic Regression:**
 
 Train  accuracy: 0.868
 
 Test   accuracy: 0.730
+
 **XGBoost:**
 
 Train  accuracy: 1.000
