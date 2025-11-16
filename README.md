@@ -56,6 +56,6 @@ Hangwei: XGBoost classifier
 
 Ketong: Logistic Regression classifier
 
-Louis: Support Vector Machine classifier
+Louis: Random Forest classifier
 
 All three alternative models achieved better test accuracy compared to the optimized Random Forest, suggesting that they may be more suitable for high-dimensional single-cell classification.
