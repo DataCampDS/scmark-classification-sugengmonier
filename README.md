@@ -52,29 +52,29 @@ While this represents an improvement over the baseline, the Random Forest still 
 
 To address the limitations of the Random Forest, each team member implemented an alternative classifier and evaluated its performance using balanced accuracy.
 
-# Hangwei: Logistic Regression and XGBoost
-# Logistic Regression:
+**Hangwei: Logistic Regression and XGBoost**
+**Logistic Regression:**
 
-Train balanced accuracy: 0.868
+Train  accuracy: 0.868
 
-Test balanced accuracy: 0.730
-# XGBoost:
+Test   accuracy: 0.730
+**XGBoost:**
 
 Train  accuracy: 1.000
 
 Test   accuracy: 0.791
 
-# Ketong: LightGBM combined with high-variance gene selection
+**Ketong: LightGBM combined with high-variance gene selection**
 
 Train accuracy: 0.960
 
-Test accuracy: 0.740
+Test  accuracy: 0.740
 
-# Louis: TruncatedSVD for dimensionality reduction followed by a Bagging classifier
+**Louis: TruncatedSVD for dimensionality reduction followed by a Bagging classifier**
 
 Train accuracy: 0.985
 
-Test accuracy: 0.741
+Test  accuracy: 0.741
 
 Overall, all three alternative approaches outperformed the optimized Random Forest on the test set.
 This suggests that models using gradient boosting, dimensionality reduction, or simpler linear structures may generalize better to high-dimensional single-cell RNAseq data
