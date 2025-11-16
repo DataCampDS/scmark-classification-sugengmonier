@@ -54,17 +54,17 @@ To address the limitations of the Random Forest, each team member implemented an
 
 Hangwei: Logistic Regression and XGBoost
 
-Logistic Regression:
+#Logistic Regression:
 
 Train balanced accuracy: 0.868
 
 Test balanced accuracy: 0.730
 
-XGBoost:
+#XGBoost:
 
-Train balanced accuracy: 1.000
+Train  accuracy: 1.000
 
-Test balanced accuracy: 0.791
+Test   accuracy: 0.791
 
 Ketong: LightGBM combined with high-variance gene selection
 
