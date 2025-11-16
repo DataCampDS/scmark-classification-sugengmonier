@@ -21,3 +21,41 @@ python download_data.py
 # Get started with the challenge
 
 Open the jupyter notebook `scMARK_classification_starting_kit.ipynb` and follow the guide !
+
+# Weekly Progress — Week 1
+# Environment Setup
+
+We successfully set up the required Python environment following the instructions from the starting kit.
+All dependencies were installed correctly, and the project structure is now ready for experimentation.
+
+# Data Loading
+
+We downloaded the public dataset using the provided script: `python download_data.py`
+
+
+The data was loaded successfully, and we verified the structure and basic statistics of the single-cell RNAseq count data.
+
+# Model Optimization
+
+We started by optimizing the baseline Random Forest classifier provided in the starting kit.
+Using grid search, all team members tuned hyperparameters such as `n_estimators`, `max_depth`, and `max_features`.
+
+The optimized model achieved the following performance:
+
+Training accuracy: 0.85
+
+Test accuracy: 0.66
+
+While this represents an improvement over the baseline, the Random Forest still struggled with the high dimensionality of gene expression features.
+
+# Exploration of Alternative Models
+
+To address the limitations of the Random Forest, each team member implemented an alternative classifier:
+
+Hangwei: XGBoost classifier
+
+Ketong: Logistic Regression classifier
+
+Louis: Support Vector Machine classifier
+
+All three alternative models achieved better test accuracy compared to the optimized Random Forest, suggesting that they may be more suitable for high-dimensional single-cell classification.
