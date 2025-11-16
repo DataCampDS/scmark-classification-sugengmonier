@@ -48,31 +48,29 @@ Test accuracy: 0.66
 
 While this represents an improvement over the baseline, the Random Forest still struggled with the high dimensionality of gene expression features.
 
-Exploration of Alternative Models
+# Exploration of Alternative Models
 
 To address the limitations of the Random Forest, each team member implemented an alternative classifier and evaluated its performance using balanced accuracy.
 
-Hangwei: Logistic Regression and XGBoost
-
-#Logistic Regression:
+# Hangwei: Logistic Regression and XGBoost
+# Logistic Regression:
 
 Train balanced accuracy: 0.868
 
 Test balanced accuracy: 0.730
-
-#XGBoost:
+# XGBoost:
 
 Train  accuracy: 1.000
 
 Test   accuracy: 0.791
 
-Ketong: LightGBM combined with high-variance gene selection
+# Ketong: LightGBM combined with high-variance gene selection
 
 Train accuracy: 0.960
 
 Test accuracy: 0.740
 
-Louis: TruncatedSVD for dimensionality reduction followed by a Bagging classifier
+# Louis: TruncatedSVD for dimensionality reduction followed by a Bagging classifier
 
 Train accuracy: 0.985
 
